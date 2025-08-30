@@ -38,6 +38,7 @@ body {
     display: inline-block;
     border: 1px solid transparent;
     cursor: pointer;
+    white-space: nowrap;
 }
 
 .btn-primary {
