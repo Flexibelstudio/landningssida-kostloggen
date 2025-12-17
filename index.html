@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kostloggen - Din Hälsoresa. På ditt sätt.</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,700;6..12,800;6..12,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="/public/favicon.png" type="image/png">
+    <script async src="https://cdn.promotekit.com/promotekit.js" data-promotekit="94d27a7a-f1c9-4975-b66c-cb6fb31abf7c"></script>
+</head>
+<body class="bg-dotted-pattern">
+    <main>
+        <!-- HERO SECTION -->
+        <section id="hero">
+            <div class="hero-content">
+                <div class="app-icon">
+                     <img src="/public/favicon.png" alt="Kostloggen App Icon">
+                </div>
+                <p class="eyebrow-text">KOSTLOGGEN 2.0</p>
+                <h1 class="hero-headline">Din hälsoresa. På ditt sätt.<br>Med din coach.</h1>
+                <p class="lead">Logga maten enkelt, bygg hållbara vanor och få stöd av en AI-coach som anpassar sig efter dig – oavsett om du vill ha en kram eller en spark i baken.</p>
+                
+                <div class="hero-cta">
+                    <div class="cta-container">
+                        <a href="https://app.kostloggen.se" class="btn btn-primary">Starta din resa</a>
+                    </div>
+                    <p class="price-info">
+                        <strong>95 kr/mån</strong>
+                        <br>Ingen bindningstid. Avsluta när du vill.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- USP 1: COACHES (Wrapped in Main Card) -->
+        <section id="coaches">
+            <div class="section-container">
+                <div class="main-card">
+                    <h2>Vem vill du bli coachad av?</h2>
+                    <p class="section-subtitle">Välj den personlighet som passar dig bäst just nu. Byt när du vill.</p>
+                    
+                    <div class="coach-grid">
+                        <!-- Kompisen -->
+                        <div class="coach-card kompisen">
+                            <div class="coach-icon-container">
+                                🌸
+                            </div>
+                            <h3>Kompisen</h3>
+                            <p>För dig som vill ha stöd, värme och fokus på välmående.</p>
+                        </div>
+
+                        <!-- PT:n -->
+                        <div class="coach-card pt">
+                            <div class="coach-icon-container">
+                                ⏱️
+                            </div>
+                            <h3>PT:n</h3>
+                            <p>För dig som vill ha fakta, struktur och raka rör. Optimera mera.</p>
+                        </div>
+
+                        <!-- Generalen -->
+                        <div class="coach-card generalen">
+                            <div class="coach-icon-container">
+                                🪖
+                            </div>
+                            <h3>Generalen</h3>
+                            <p>Inga ursäkter. Tough love för dig som vill ha resultat NU.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- USP 2: SPARPOTTEN (Wrapped in Main Card) -->
+        <section id="sparpott">
+            <div class="section-container">
+                <div class="main-card">
+                    <div class="feature-split">
+                        <div class="feature-text">
+                            <h2>Lev livet – även på helgen</h2>
+                            <p>Många hatar kostappar för att de känner sig misslyckade om de äter en pizza på lördagen. <strong>Sparpotten</strong> löser detta.</p>
+                            <p>Ligg lite under ditt mål på vardagarna och "spara" kalorierna i din pott. Använd dem sen till fredagsmyset eller helgmiddagen. Sluta banta, börja balansera.</p>
+                            <a href="https://app.kostloggen.se" class="btn btn-secondary">Testa Sparpotten</a>
+                        </div>
+                        <div class="feature-visual">
+                            <!-- New UI Component Design -->
+                            <div class="sparpott-ui-card">
+                                <div class="sparpott-left">
+                                    <div class="sparpott-icon-box">
+                                        <!-- Piggy Bank Icon -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 5c-1.5 0-2.8 1.4-3 2-3.5-1.5-11-.3-11 5 0 1.8 0 3 2 4.5V20h4v-2h3v2h4v-4c1-.5 1.7-1 2-2.5V5z"></path><line x1="16" y1="11" x2="16" y2="9"></line></svg>
+                                    </div>
+                                </div>
+                                <div class="sparpott-right">
+                                    <div class="sparpott-label">SPARPOTT</div>
+                                    <div class="sparpott-value">250<span class="sparpott-unit">kcal</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- USP 3: APP FEATURES CAROUSEL (New Section - Individual Green Cards) -->
+        <section id="app-features">
+            <div class="section-container">
+                <h2>Det bästa med Kostloggen</h2>
+                <!-- No main-card wrapper, direct cards container -->
+                <div class="feature-carousel-container" id="feature-scroller">
+                    
+                    <!-- Card 1 -->
+                    <div class="feature-slide">
+                        <div class="feature-slide-content">
+                            <h3>Personlig AI-Coach</h3>
+                            <p>Få daglig feedback och skräddarsydda insikter som hjälper dig att förstå dina vanor och nå dina mål snabbare.</p>
+                        </div>
+                        <div class="feature-phone-container">
+                            <img src="/public/1.png" alt="Personlig AI-Coach i mobilen">
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="feature-slide">
+                        <div class="feature-slide-content">
+                            <h3>Flexibel Veckobudget</h3>
+                            <p>Njut av helgen utan stress. Vår veckobudget ger dig friheten att balansera dina kalorier över hela veckan.</p>
+                        </div>
+                        <div class="feature-phone-container">
+                            <img src="/public/2.png" alt="Veckobudget översikt i appen">
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="feature-slide">
+                        <div class="feature-slide-content">
+                            <h3>Recept från ditt Kylskåp</h3>
+                            <p>Fota ditt kylskåp och få smarta receptförslag. Perfekt för att minska matsvinnet och hitta ny inspiration.</p>
+                        </div>
+                        <div class="feature-phone-container">
+                            <img src="/public/3.png" alt="AI Receptfunktion">
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="feature-slide">
+                        <div class="feature-slide-content">
+                            <h3>Styrka i Gemenskap</h3>
+                            <p>Dela dina framgångar med peppande vänner. Tillsammans blir resan enklare och roligare.</p>
+                        </div>
+                        <div class="feature-phone-container">
+                            <img src="/public/4.png" alt="Community feed i appen">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS (Restored Design, New Content, No Main Wrapper) -->
+        <section id="testimonials">
+            <div class="section-container">
+                <h2>Vad våra användare säger</h2>
+                <div class="testimonial-carousel-container">
+                    <div class="testimonial-carousel-wrapper">
+                        <button class="app-review-btn prev" aria-label="Föregående omdöme">&larr;</button>
+                        <div class="app-testimonial-carousel">
+                            <!-- Review 1 -->
+                            <div class="testimonial-card">
+                                <span class="testimonial-star">⭐</span>
+                                <h3 class="testimonial-headline">"Äntligen en app som fattar grejen!"</h3>
+                                <p class="testimonial-body">"Jag har testat allt, men alltid gett upp för att det känns för strikt. Sparpotten i Kostloggen är helt genialisk! Att jag kan 'spara' lite kalorier under veckan för att kunna ta en pizza eller ett glas vin på helgen med gott samvete gör hela skillnaden. Det känns inte som en diet, utan som en livsstil jag faktiskt kan hålla."</p>
+                                <div class="testimonial-author-row">
+                                    <div class="author-icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z" fill="currentColor"></path></svg>
+                                    </div>
+                                    <span class="author-name">- Malin, 34</span>
+                                </div>
+                            </div>
+                            <!-- Review 2 -->
+                            <div class="testimonial-card">
+                                <span class="testimonial-star">⭐</span>
+                                <h3 class="testimonial-headline">"Imponerande AI-funktioner"</h3>
+                                <p class="testimonial-body">"Var skeptisk till att fota maten först, men AI:n är skrämmande bra på att gissa rätt direkt. Det går så mycket snabbare än att sitta och söka i listor. Att få en morgonbriefing av AI-coachen (jag kör 'PT:n' som inställning) är en grym start på dagen. Snyggt och rent gränssnitt också."</p>
+                                <div class="testimonial-author-row">
+                                    <div class="author-icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z" fill="currentColor"></path></svg>
+                                    </div>
+                                    <span class="author-name">- Johanna, 29</span>
+                                </div>
+                            </div>
+                            <!-- Review 3 -->
+                            <div class="testimonial-card">
+                                <span class="testimonial-star">⭐</span>
+                                <h3 class="testimonial-headline">"Känner mig inte ensam längre"</h3>
+                                <p class="testimonial-body">"Kursen 'Praktisk Viktkontroll' var precis vad jag behövde för att komma igång. Men det bästa är nog communityt. Att ha Peppkompisar som hejar på en när man loggar sina måltider eller når en ny nivå gör att man vill fortsätta. Enda minuset är att jag vill ha ännu fler recept, men annars toppen!"</p>
+                                <div class="testimonial-author-row">
+                                    <div class="author-icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z" fill="currentColor"></path></svg>
+                                    </div>
+                                    <span class="author-name">- Ewa, 52</span>
+                                </div>
+                            </div>
+                            <!-- Review 4 -->
+                            <div class="testimonial-card">
+                                <span class="testimonial-star">⭐</span>
+                                <h3 class="testimonial-headline">"Generalen levererar!"</h3>
+                                <p class="testimonial-body">"Jag behöver ingen som daltar med mig, så jag valde coach-personan 'Generalen'. Rak, tydlig och inga ursäkter. Min streak är nu uppe i 45 dagar och jag har aldrig varit så här konsekvent förut. Gillar att man ser tydligt när man når sina makros."</p>
+                                <div class="testimonial-author-row">
+                                    <div class="author-icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z" fill="currentColor"></path></svg>
+                                    </div>
+                                    <span class="author-name">- Rebecka, 41</span>
+                                </div>
+                            </div>
+                            <!-- Review 5 -->
+                            <div class="testimonial-card">
+                                <span class="testimonial-star">⭐</span>
+                                <h3 class="testimonial-headline">"Tack för klimakteriekursen!"</h3>
+                                <p class="testimonial-body">"Hittade hit tack vare kursen 'Maxa Klimakteriet'. Så skönt att få konkreta råd om kost och träning anpassat för oss mitt i livet, istället för generella bantningstips. Känner mig piggare och har mindre vallningar sen jag började följa råden om proteinintag."</p>
+                                <div class="testimonial-author-row">
+                                    <div class="author-icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z" fill="currentColor"></path></svg>
+                                    </div>
+                                    <span class="author-name">- Susanne, 56</span>
+                                </div>
+                            </div>
+                            <!-- Review 6 -->
+                            <div class="testimonial-card">
+                                <span class="testimonial-star">⭐</span>
+                                <h3 class="testimonial-headline">"Snabbt och enkelt"</h3>
+                                <p class="testimonial-body">"Hinner inte hålla på och väga allt hela tiden. Funktionen 'Vanliga val' gör det superenkelt att logga min frukost och lunch som ofta är samma. Appen är snabb och krånglar inte. Prickarna i bakgrunden är faktiskt väldigt behagliga för ögonen, haha."</p>
+                                <div class="testimonial-author-row">
+                                    <div class="author-icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z" fill="currentColor"></path></svg>
+                                    </div>
+                                    <span class="author-name">- Andrea, 38</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="app-review-btn next" aria-label="Nästa omdöme">&rarr;</button>
+                    </div>
+                    <div class="app-testimonial-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COURSE SECTION (Expanded to Grid) -->
+        <section id="course-section">
+            <div class="section-container">
+                <div class="main-card" style="text-align: center;">
+                    <h2>Ingår i Kostloggen</h2>
+                    <p class="section-subtitle">Inte bara en app. Du får kompletta kurser för hållbara resultat.</p>
+                    
+                    <div class="courses-grid">
+                        <!-- Course 1 -->
+                        <div class="course-card">
+                            <h3>Praktisk Viktkontroll</h3>
+                            <p>En komplett kurs värde 1495 kr. Lär dig bygga hållbara vanor och nå din målvikt utan förbud.</p>
+                            <button class="btn btn-secondary" id="btn-viktkontroll">Läs om kursen</button>
+                        </div>
+                        
+                        <!-- Course 2 -->
+                        <div class="course-card">
+                            <h3>Maxa Klimakteriet</h3>
+                            <p>Bli starkare, piggare och tryggare. Vi fokuserar på hormonell balans, smart kost och träning.</p>
+                            <button class="btn btn-secondary" id="btn-klimakteriet">Läs om kursen</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FINAL CTA -->
+        <section style="text-align: center; padding-bottom: 6rem;">
+            <h2>Redo att testa Generalen?</h2>
+            <p style="margin-bottom: 2rem; color: var(--light-text);">Eller behöver du en kram av Kompisen? Valet är ditt.</p>
+            <div class="cta-container">
+                <a href="https://app.kostloggen.se" class="btn btn-primary">Starta din resa nu</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 SmartStudio. Alla rättigheter förbehållna.</p>
+    </footer>
+
+    <!-- MODAL 1: Viktkontroll -->
+    <div id="modal-viktkontroll" class="modal hidden">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Stäng fönster">&times;</button>
+            <div class="modal-header">
+                <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                <h2>Om Kursen</h2>
+            </div>
+            <div class="modal-body">
+                <hr class="title-decorator">
+                <h3>Praktisk Viktkontroll – Din Resa Mot Hållbar Hälsa</h3>
+                <p>Välkommen till kursen "Praktisk Viktkontroll"! Detta program är noggrant utformat för att ge dig de verktyg, kunskaper och det stöd du behöver för att uppnå en hållbar viktkontroll och en hälsosammare livsstil.</p>
+                <p>Vi fokuserar på att bygga starka, positiva vanor kring både kost och motion. Du kommer att lära dig att lyssna på din kropps signaler, förstå dina hungermönster och effektivt hantera de utmaningar som kan uppstå längs vägen.</p>
+                <p>Kursen består av 12 lektioner med specifika fokusområden, praktiska tips och reflektionsfrågor. Den första lektionen blir tillgänglig direkt när kursen aktiveras. Därefter låser du upp en ny lektion för varje 7 nya dagar du lyckas hålla din streak, vilket uppmuntrar till konsekvens och hållbara framsteg.</p>
+                <p>Denna kursen ingår i din prenumeration.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary modal-understand-btn">Jag förstår</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 2: Maxa Klimakteriet -->
+    <div id="modal-klimakteriet" class="modal hidden">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Stäng fönster">&times;</button>
+            <div class="modal-header">
+                <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                <h2>Om Kursen</h2>
+            </div>
+            <div class="modal-body">
+                <hr class="title-decorator">
+                <h3>Maxa Klimakteriet – Bli starkare, piggare och tryggare i din nya kropp.</h3>
+                <p>Klimakteriet är inte en sjukdom som ska botas, utan en naturlig fas där spelreglerna för din kropp förändras. Många kvinnor upplever förvirring kring viktuppgång, sömnproblem och energibrist. Kursen Maxa Klimakteriet ger dig kunskapen och verktygen för att inte bara hantera förändringarna – utan vända dem till din styrka. Vi fokuserar på hormonell balans, smart kost och träning som faktiskt gör skillnad.</p>
+                
+                <h3>Vad lär du dig?</h3>
+                <ul>
+                    <li><strong>Förstå din kropp:</strong> Vi går igenom perimenopaus, menopaus och postmenopaus. Få koll på symtom som vallningar och hjärdimma.</li>
+                    <li><strong>Mat som medicin:</strong> Lär dig varför protein är viktigare än någonsin och hur du äter för att minska inflammation och behålla muskler.</li>
+                    <li><strong>Träna för effekt:</strong> Glöm "tantgympa". Vi lär dig varför tung styrketräning är nyckeln till att stärka skelettet och öka ämnesomsättningen.</li>
+                    <li><strong>Återhämtning på riktigt:</strong> Konkreta strategier för sömnhygien, stresshantering och balans.</li>
+                    <li><strong>Inga tabun:</strong> Vi pratar klarspråk om HRT, slemhinnor och sexuell hälsa.</li>
+                </ul>
+
+                <p><strong>För vem?</strong> För dig som är kvinna mitt i livet (40+) och som vill ta ett proaktivt grepp om din hälsa.</p>
+                <p>Denna kursen ingår i din prenumeration.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary modal-understand-btn">Jag förstår</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script Import -->
+    <script type="module" src="index.tsx"></script>
+</body>
+</html>
