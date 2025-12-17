@@ -240,6 +240,39 @@ h2 {
     box-shadow: 0 12px 24px rgba(0,0,0,0.08);
 }
 
+/* AI Badge Style */
+.ai-chip {
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 4px 12px;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    background-color: #f1f5f9;
+    color: #64748b;
+    border: 1px solid #e2e8f0;
+    display: inline-block;
+}
+
+.coach-card.generalen .ai-chip {
+    background-color: rgba(155, 44, 44, 0.1);
+    color: #9b2c2c;
+    border-color: rgba(155, 44, 44, 0.2);
+}
+
+.coach-card.kompisen .ai-chip {
+    background-color: rgba(255, 105, 180, 0.1); /* Pink tint */
+    color: #d63384;
+    border-color: rgba(255, 105, 180, 0.2);
+}
+
+.coach-card.pt .ai-chip {
+    background-color: rgba(32, 201, 151, 0.1); /* Teal tint */
+    color: #0ca678;
+    border-color: rgba(32, 201, 151, 0.2);
+}
+
 .coach-icon-container {
     width: 80px;
     height: 80px;
