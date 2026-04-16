@@ -1008,6 +1008,22 @@ footer {
     margin: 0;
 }
 
+.bootcamp-cta-container {
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+.bootcamp-price {
+    color: #cbd5e1;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.bootcamp-price strong {
+    color: white;
+    font-size: 1.4rem;
+}
+
 .btn-bootcamp {
     display: inline-block;
     background-color: var(--accent-orange);
