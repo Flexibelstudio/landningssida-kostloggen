@@ -896,6 +896,142 @@ footer {
     color: var(--light-text);
 }
 
+/* Bootcamp Section */
+.bootcamp-section {
+    padding: 4rem 0;
+}
+
+.bootcamp-card {
+    background-color: #1a202c; /* Dark military green/gray */
+    border-radius: 32px;
+    padding: 4rem;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    color: white;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Subtle camouflage/texture overlay */
+.bootcamp-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size: 20px 20px;
+    pointer-events: none;
+}
+
+.bootcamp-content {
+    flex: 1;
+    position: relative;
+    z-index: 1;
+}
+
+.bootcamp-badge {
+    display: inline-block;
+    background-color: var(--accent-orange);
+    color: white;
+    font-weight: 800;
+    font-size: 0.85rem;
+    padding: 0.4rem 1rem;
+    border-radius: 100px;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+}
+
+.bootcamp-content h2 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.bootcamp-subtitle {
+    color: #cbd5e1;
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+}
+
+.bootcamp-features {
+    list-style: none;
+    margin-bottom: 3rem;
+}
+
+.bootcamp-features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.bootcamp-icon {
+    font-size: 1.5rem;
+    background: rgba(255,255,255,0.1);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+.bootcamp-features strong {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+    color: white;
+}
+
+.bootcamp-features p {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.btn-bootcamp {
+    display: inline-block;
+    background-color: var(--accent-orange);
+    color: white;
+    padding: 1.2rem 2.5rem;
+    border-radius: 100px;
+    font-weight: 800;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 10px 20px rgba(249, 115, 22, 0.3);
+}
+
+.btn-bootcamp:hover {
+    background-color: #ea580c;
+    transform: translateY(-3px);
+    box-shadow: 0 15px 25px rgba(249, 115, 22, 0.4);
+}
+
+.bootcamp-visual {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.bootcamp-general-img {
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(0 20px 30px rgba(0,0,0,0.4));
+    transform: scale(1.1); /* Make him pop out a bit */
+}
+
 
 /* Responsive Design */
 @media (max-width: 900px) {
@@ -911,6 +1047,19 @@ footer {
     
     #hero .hero-headline {
         font-size: 2.2rem;
+    }
+
+    .bootcamp-card {
+        flex-direction: column;
+        padding: 3rem 2rem;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .bootcamp-features li {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 }
 
