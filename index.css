@@ -905,9 +905,6 @@ footer {
     background-color: #1a202c; /* Dark military green/gray */
     border-radius: 32px;
     padding: 4rem;
-    display: flex;
-    align-items: center;
-    gap: 4rem;
     color: white;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
     position: relative;
@@ -945,10 +942,26 @@ footer {
     margin-bottom: 1.5rem;
 }
 
+.bootcamp-title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.bootcamp-small-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--accent-orange);
+    flex-shrink: 0;
+}
+
 .bootcamp-content h2 {
     color: white;
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+    font-size: 2.2rem;
+    margin-bottom: 0;
     line-height: 1.2;
 }
 
@@ -1016,21 +1029,7 @@ footer {
     box-shadow: 0 15px 25px rgba(249, 115, 22, 0.4);
 }
 
-.bootcamp-visual {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-}
-
-.bootcamp-general-img {
-    max-width: 100%;
-    height: auto;
-    filter: drop-shadow(0 20px 30px rgba(0,0,0,0.4));
-    transform: scale(1.1); /* Make him pop out a bit */
-}
+/* Removed large visual */
 
 
 /* Responsive Design */
@@ -1050,10 +1049,17 @@ footer {
     }
 
     .bootcamp-card {
-        flex-direction: column;
         padding: 3rem 2rem;
+    }
+
+    .bootcamp-title-wrapper {
+        flex-direction: column;
         text-align: center;
-        gap: 2rem;
+        gap: 1rem;
+    }
+
+    .bootcamp-content h2 {
+        font-size: 1.8rem;
     }
 
     .bootcamp-features li {
