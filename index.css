@@ -1113,9 +1113,15 @@ footer {
         padding: 2rem 1.5rem;
     }
     
-    .btn-primary {
+    .btn-primary, .btn-bootcamp {
         width: 100%;
         max-width: 340px;
+    }
+
+    .btn-bootcamp {
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+        box-sizing: border-box; /* Ensure padding doesn't widen it */
     }
     
     .testimonial-card {
