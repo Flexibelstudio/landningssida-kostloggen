@@ -1,21 +1,28 @@
 :root {
-    --primary-green: #3bab5a;
-    --primary-green-dark: #35934b;
-    --primary-green-light: #dcfce7; /* bg-primary-100 equivalent */
-    --accent-orange: #fd7e14; /* Orange from the reference image */
-    --dark-text: #212529;
-    --light-text: #6c757d;
+    /* Paletten är hämtad rakt av från appen så att sida och app känns som
+       samma produkt: terrakotta som primärfärg, salvia som accent och en
+       varm gräddvit botten i stället för kall gråvit. */
+    --primary: #D96E4A;
+    --primary-dark: #C05A38;
+    --primary-light: #F6E2D9;
+    --accent: #7BA05B;
+    --accent-light: #E8EFE9;
+    --dark-text: #56524D;
+    --light-text: #7A756E;
     --background: #ffffff;
-    --light-gray-bg: #f8f9fa; /* Fallback */
-    --border-color: #dee2e6;
-    --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    --main-card-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
-    --font-family: 'Nunito Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    
+    --cream-bg: #FAF6EF;
+    --light-gray-bg: #FAF6EF;
+    --border-color: #E2D8CC;
+    --border-soft: #F1EAE0;
+    --card-shadow: 0 4px 12px rgba(86, 82, 77, 0.06);
+    --main-card-shadow: 0 8px 24px rgba(86, 82, 77, 0.08);
+    --font-family: 'Jost', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-heading: 'Fraunces', Georgia, 'Times New Roman', serif;
+
     /* Coach Colors */
-    --general-bg: #fff5f5;
-    --general-border: #feb2b2;
-    --general-text: #9b2c2c;
+    --general-bg: #FDF1EC;
+    --general-border: #E9B9A5;
+    --general-text: #8E3B1E;
 }
 
 /* Basic Reset */
@@ -31,7 +38,7 @@ html {
 
 /* Promo Banner */
 .promo-banner {
-    background-color: var(--accent-orange);
+    background-color: var(--accent);
     color: white;
     text-align: center;
     padding: 0.75rem 1rem;
@@ -50,7 +57,7 @@ html {
 
 .promo-text {
     display: block;
-    color: var(--accent-orange);
+    color: var(--accent);
     font-weight: 800;
     font-size: 0.9rem;
     margin-top: 0.25rem;
@@ -93,7 +100,7 @@ body {
 }
 
 .btn-primary {
-    background-color: var(--primary-green);
+    background-color: var(--primary);
     color: #fff;
     padding: 1rem 2.5rem;
     font-size: 1.1rem;
@@ -102,22 +109,22 @@ body {
 }
 
 .btn-primary:hover {
-    background-color: var(--primary-green-dark);
+    background-color: var(--primary-dark);
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(59, 171, 90, 0.4);
 }
 
 .btn-secondary {
     background-color: #fff;
-    color: var(--primary-green);
-    border: 2px solid var(--primary-green);
+    color: var(--primary);
+    border: 2px solid var(--primary);
     padding: 0.8rem 2rem;
     font-size: 1rem;
     border-radius: 16px;
 }
 
 .btn-secondary:hover {
-    background-color: var(--primary-green);
+    background-color: var(--primary);
     color: #fff;
 }
 
@@ -183,7 +190,7 @@ h2 {
 }
 
 .eyebrow-text {
-    color: var(--primary-green);
+    color: var(--primary);
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 1.5px;
@@ -234,7 +241,7 @@ h2 {
 }
 
 .hero-checklist svg {
-    color: var(--primary-green);
+    color: var(--primary);
 }
 
 .hero-cta {
@@ -261,7 +268,7 @@ h2 {
 .price-info .original-price {
     text-decoration: line-through;
     margin-left: 0.25rem;
-    color: #999;
+    color: #7A756E;
 }
 
 /* Coaches Section */
@@ -280,7 +287,7 @@ h2 {
     text-align: center;
     box-shadow: var(--card-shadow); /* Card on Card effect */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid #f0f0f0;
+    border: 1px solid #F1EAE0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -301,9 +308,9 @@ h2 {
     padding: 4px 12px;
     border-radius: 12px;
     margin-bottom: 1.5rem;
-    background-color: #f1f5f9;
+    background-color: #FAF6EF;
     color: #64748b;
-    border: 1px solid #e2e8f0;
+    border: 1px solid #E2D8CC;
     display: inline-block;
 }
 
@@ -328,7 +335,7 @@ h2 {
 .coach-icon-container {
     width: 80px;
     height: 80px;
-    background: #f8f9fa; /* Default bg */
+    background: #FAF6EF; /* Default bg */
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -413,7 +420,7 @@ h2 {
     width: 100%;
     /* Card shadow inside main card */
     box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-    border: 1px solid #f0f0f0;
+    border: 1px solid #F1EAE0;
     
     /* Layout */
     display: flex;
@@ -429,12 +436,12 @@ h2 {
 .sparpott-icon-box {
     width: 48px;
     height: 48px;
-    background-color: var(--primary-green-light);
+    background-color: var(--primary-light);
     border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--primary-green-dark);
+    color: var(--primary-dark);
 }
 
 .sparpott-right {
@@ -446,7 +453,7 @@ h2 {
 .sparpott-label {
     font-size: 0.7rem;
     text-transform: uppercase;
-    color: #9ca3af; /* text-neutral-400 */
+    color: #7A756E; /* text-neutral-400 */
     font-weight: 700;
     letter-spacing: 1.5px;
     line-height: 1;
@@ -456,14 +463,14 @@ h2 {
 .sparpott-value {
     font-size: 2rem;
     font-weight: 800; /* Extra bold */
-    color: #111; /* Dark gray/black */
+    color: #3A3632; /* Dark gray/black */
     line-height: 1;
 }
 
 .sparpott-unit {
     font-size: 1rem;
     font-weight: 500;
-    color: #9ca3af;
+    color: #7A756E;
     margin-left: 2px;
 }
 
@@ -527,7 +534,7 @@ h2 {
 .feature-slide {
     flex: 0 0 320px; /* Base width */
     scroll-snap-align: center;
-    background-color: var(--primary-green-light); /* Light Green Background */
+    background-color: var(--primary-light); /* Light Green Background */
     border-radius: 32px; /* Large rounded corners */
     padding: 2.5rem 1.5rem 2rem 1.5rem; /* Padding top/sides, 2rem bottom for spacing */
     display: flex;
@@ -557,7 +564,7 @@ h2 {
 }
 
 .feature-slide p {
-    color: #4b5563; /* Slightly darker than light-text for readability on green */
+    color: #56524D; /* Slightly darker than light-text for readability on green */
     font-size: 1.05rem;
     line-height: 1.5;
     margin-bottom: 0;
@@ -621,7 +628,7 @@ h2 {
 .testimonial-card {
     flex: 0 0 100%;
     background-color: #fff;
-    border: 1px solid #e5e7eb;
+    border: 1px solid #F1EAE0;
     border-radius: 16px;
     padding: 3rem;
     text-align: left;
@@ -647,7 +654,7 @@ h2 {
 
 .testimonial-body {
     font-size: 1.05rem;
-    color: #4b5563;
+    color: #56524D;
     flex-grow: 1;
     margin-bottom: 2rem;
 }
@@ -662,12 +669,12 @@ h2 {
 .author-icon {
     width: 40px;
     height: 40px;
-    border: 2px solid var(--primary-green);
+    border: 2px solid var(--primary);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--primary-green);
+    color: var(--primary);
     flex-shrink: 0;
 }
 
@@ -682,7 +689,7 @@ h2 {
     height: 48px;
     border-radius: 50%;
     background: #fff;
-    border: 1px solid #e5e7eb;
+    border: 1px solid #F1EAE0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -696,8 +703,8 @@ h2 {
 }
 
 .app-review-btn:hover {
-    border-color: var(--primary-green);
-    color: var(--primary-green);
+    border-color: var(--primary);
+    color: var(--primary);
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
@@ -711,14 +718,14 @@ h2 {
 .dot {
     width: 10px;
     height: 10px;
-    background-color: #e5e7eb;
+    background-color: #F1EAE0;
     border-radius: 50%;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .dot.active {
-    background-color: var(--primary-green);
+    background-color: var(--primary);
 }
 
 /* Course Section Layout */
@@ -730,11 +737,11 @@ h2 {
 }
 
 .course-card {
-    background-color: #f8f9fa;
+    background-color: #FAF6EF;
     border-radius: 24px;
     padding: 2.5rem 2rem;
     text-align: center;
-    border: 1px solid #f0f0f0;
+    border: 1px solid #F1EAE0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -749,18 +756,18 @@ h2 {
 .course-icon-wrapper {
     width: 80px;
     height: 80px;
-    background-color: #f8f9fa;
+    background-color: #FAF6EF;
     border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 1.5rem;
     position: relative;
-    border: 1px solid #e5e7eb;
+    border: 1px solid #F1EAE0;
 }
 
 .course-icon-wrapper svg {
-    color: var(--primary-green);
+    color: var(--primary);
 }
 
 .course-check-badge {
@@ -775,18 +782,18 @@ h2 {
     align-items: center;
     justify-content: center;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    color: var(--primary-green);
+    color: var(--primary);
 }
 
 .course-card h3 {
     font-size: 1.8rem;
     font-weight: 900;
     margin-bottom: 1rem;
-    color: #111;
+    color: #3A3632;
 }
 
 .course-card p {
-    color: #4b5563;
+    color: #56524D;
     margin-bottom: 2rem;
     flex-grow: 1;
     font-size: 1.1rem;
@@ -832,7 +839,7 @@ h2 {
     border: none;
     font-size: 2rem;
     cursor: pointer;
-    color: #999;
+    color: #7A756E;
     line-height: 1;
 }
 
@@ -845,7 +852,7 @@ h2 {
     align-items: center;
     gap: 0.5rem;
     margin-bottom: 1rem;
-    color: var(--primary-green);
+    color: var(--primary);
 }
 
 .modal-header h2 {
@@ -879,7 +886,7 @@ h2 {
 .title-decorator {
     border: 0;
     height: 1px;
-    background: #e5e7eb;
+    background: #F1EAE0;
     margin: 1rem 0;
 }
 
@@ -933,7 +940,7 @@ footer {
 
 .bootcamp-badge {
     display: inline-block;
-    background-color: var(--accent-orange);
+    background-color: var(--accent);
     color: white;
     font-weight: 800;
     font-size: 0.85rem;
@@ -955,7 +962,7 @@ footer {
     height: 80px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid var(--accent-orange);
+    border: 3px solid var(--accent);
     flex-shrink: 0;
 }
 
@@ -967,7 +974,7 @@ footer {
 }
 
 .bootcamp-subtitle {
-    color: #cbd5e1;
+    color: #C2BCB4;
     font-size: 1.1rem;
     margin-bottom: 2.5rem;
 }
@@ -1015,7 +1022,7 @@ footer {
 }
 
 .bootcamp-price {
-    color: #cbd5e1;
+    color: #C2BCB4;
     font-size: 1.1rem;
     margin-bottom: 1rem;
 }
@@ -1027,7 +1034,7 @@ footer {
 
 .btn-bootcamp {
     display: inline-block;
-    background-color: var(--accent-orange);
+    background-color: var(--accent);
     color: white;
     padding: 1.2rem 2.5rem;
     border-radius: 100px;
