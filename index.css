@@ -77,10 +77,8 @@ body {
     background-color: var(--light-gray-bg);
     color: var(--dark-text);
     line-height: 1.6;
-    /* Dotted Background Pattern from App */
-    background-image: radial-gradient(#E2D8CC 1px, transparent 0);
-    background-size: 25px 25px;
-    background-attachment: fixed; /* Keeps dots static while scrolling */
+    /* Prickmonstret ar borttaget - appen kor en helt slat gradvit yta numera
+       och sidan ska matcha den. */
 }
 
 /* Main Content Wrappers (Cards on Background) */
