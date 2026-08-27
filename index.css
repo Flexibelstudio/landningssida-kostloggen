@@ -925,19 +925,6 @@ footer {
     overflow: hidden;
 }
 
-/* Subtle camouflage/texture overlay */
-.bootcamp-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
-    background-size: 20px 20px;
-    pointer-events: none;
-}
-
 .bootcamp-content {
     flex: 1;
     position: relative;
