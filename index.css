@@ -1017,6 +1017,14 @@ footer {
 .bootcamp-price {
     color: #C2BCB4;
     font-size: 1.1rem;
+    margin-bottom: 0.35rem;
+}
+
+/* Raden om ordinarie pris ar medvetet mindre - den ar upplysning,
+   inte ett jamforelsepris. */
+.bootcamp-price-note {
+    color: #9A948C;
+    font-size: 0.9rem;
     margin-bottom: 1rem;
 }
 
