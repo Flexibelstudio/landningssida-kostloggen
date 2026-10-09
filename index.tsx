@@ -184,3 +184,20 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+// --- Tratten: rakna besoket ---
+// Bara ett antal per dag, inga kakor och inget som pekar ut besokaren.
+// Raknas i Kostloggens molnfunktion (functions/funnel.js i app-repot).
+try {
+    if (!navigator.webdriver) {
+        const url = 'https://us-central1-flexibel-kostkollen.cloudfunctions.net/trackFunnelEvent';
+        const body = JSON.stringify({ step: 'landing_visit' });
+        const sent = typeof navigator.sendBeacon === 'function'
+            && navigator.sendBeacon(url, new Blob([body], { type: 'text/plain' }));
+        if (!sent) {
+            fetch(url, { method: 'POST', body, keepalive: true, mode: 'no-cors' }).catch(() => {});
+        }
+    }
+} catch {
+    // Rakningen far aldrig paverka sidan.
+}
