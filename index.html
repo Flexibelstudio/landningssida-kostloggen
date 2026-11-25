@@ -118,6 +118,96 @@ fbq('track', 'PageView');
             </div>
         </section>
 
+        <!-- VRID PÅ KNAPPARNA: testa själv, inget sparas -->
+        <section id="testa">
+            <div class="section-container">
+                <div class="main-card sim-card">
+                    <p class="eyebrow-text">Vrid på knapparna</p>
+                    <h2>Se vad som händer med din vikt</h2>
+                    <p class="section-subtitle">Fyll i några uppgifter och dra i reglagen: mer eller mindre mat, fler steg, mer träning. Inget sparas.</p>
+
+                    <form id="sim-form" class="sim-form" novalidate>
+                        <div class="sim-falt">
+                            <span class="sim-etikett">Jag är</span>
+                            <div class="sim-val sim-val-2">
+                                <button type="button" data-kon="female" aria-pressed="true">Kvinna</button>
+                                <button type="button" data-kon="male" aria-pressed="false">Man</button>
+                            </div>
+                        </div>
+                        <div class="sim-rad">
+                            <label><span class="sim-etikett">Ålder</span><input id="sim-alder" inputmode="numeric" placeholder="år"></label>
+                            <label><span class="sim-etikett">Längd</span><input id="sim-langd" inputmode="numeric" placeholder="cm"></label>
+                        </div>
+                        <div class="sim-rad">
+                            <label><span class="sim-etikett">Vikt nu</span><input id="sim-vikt" inputmode="decimal" placeholder="kg"></label>
+                            <label><span class="sim-etikett">Målvikt</span><input id="sim-malvikt" inputmode="decimal" placeholder="kg"></label>
+                        </div>
+                        <div class="sim-falt">
+                            <span class="sim-etikett">Hur aktiv är du?</span>
+                            <div class="sim-val sim-val-lista">
+                                <button type="button" data-aktivitet="sedentary" aria-pressed="false"><strong>Mest stillasittande</strong><small>Lite rörelse, ingen träning</small></button>
+                                <button type="button" data-aktivitet="light" aria-pressed="true"><strong>Lätt aktiv</strong><small>Promenader, träning 1–3 gånger i veckan</small></button>
+                                <button type="button" data-aktivitet="moderate" aria-pressed="false"><strong>Medelaktiv</strong><small>Träning 3–5 gånger i veckan</small></button>
+                                <button type="button" data-aktivitet="active" aria-pressed="false"><strong>Högaktiv</strong><small>Träning nästan varje dag eller ett rörligt jobb</small></button>
+                            </div>
+                        </div>
+                        <p id="sim-fel" class="sim-varning sim-fel" role="alert" hidden></p>
+                        <button type="submit" class="btn btn-primary sim-knapp">Visa min kurva</button>
+                    </form>
+
+                    <div id="sim-resultat" class="sim-resultat" hidden>
+                        <p id="sim-plan" class="sim-plan"></p>
+                        <div id="sim-diagram" class="sim-diagram"></div>
+                        <div class="sim-forklaring">
+                            <span><i class="sim-streck sim-streck-plan"></i>Din plan</span>
+                            <span><i class="sim-streck sim-streck-ny"></i>Med ändringarna</span>
+                        </div>
+                        <p id="sim-text" class="sim-text" aria-live="polite"></p>
+                        <p id="sim-golv" class="sim-varning" role="alert" hidden></p>
+                        <p id="sim-snabbt" class="sim-varning" role="alert" hidden>Det här är snabbare än ca 1 % av kroppsvikten i veckan. Det är tufft att hålla och kan kosta muskler – en lugnare takt brukar hålla längre.</p>
+
+                        <div class="sim-reglage">
+                            <label>
+                                <span class="sim-reglage-rad"><span class="sim-etikett">Kalorier per dag</span><b id="sim-kal-varde"></b></span>
+                                <input type="range" id="sim-kal" step="25">
+                                <small id="sim-kal-under"></small>
+                            </label>
+                            <label>
+                                <span class="sim-reglage-rad"><span class="sim-etikett">Steg per dag</span><b id="sim-steg-varde"></b></span>
+                                <input type="range" id="sim-steg" min="0" max="25000" step="500">
+                                <small id="sim-steg-under"></small>
+                            </label>
+                            <label>
+                                <span class="sim-reglage-rad"><span class="sim-etikett">Träning per vecka</span><b id="sim-tim-varde"></b></span>
+                                <input type="range" id="sim-tim" min="0" max="15" step="0.5">
+                            </label>
+                            <div>
+                                <span class="sim-etikett">Hur hårt tränar du?</span>
+                                <div class="sim-val sim-val-3">
+                                    <button type="button" data-intensitet="latt" aria-pressed="false">Lätt</button>
+                                    <button type="button" data-intensitet="medel" aria-pressed="false">Medel</button>
+                                    <button type="button" data-intensitet="hard" aria-pressed="false">Hård</button>
+                                </div>
+                                <small>Lätt: promenad, yoga · Medel: styrka, gruppträning · Hård: intervaller, löpning</small>
+                            </div>
+                        </div>
+
+                        <p id="sim-balans" class="sim-balans"></p>
+
+                        <div class="sim-cta">
+                            <a id="sim-cta" href="https://app.kostloggen.se/" class="btn btn-primary">Spara min plan i appen</a>
+                            <p>Dina uppgifter följer med, så slipper du fylla i dem igen. I appen vrider du på samma knappar under Mål &amp; Framsteg.</p>
+                            <div class="sim-sma-knappar">
+                                <button type="button" id="sim-aterstall" hidden>Återställ</button>
+                                <button type="button" id="sim-andra">Ändra mina uppgifter</button>
+                            </div>
+                        </div>
+                        <p class="sim-ansvar">Uppskattningar – förbränningen skiljer sig 20–30 % mellan personer. Inga medicinska råd: har du en sjukdom, äter mediciner som påverkar vikten eller är gravid, prata med vården först.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- USP 1: COACHES (Wrapped in Main Card) -->
         <section id="coaches">
             <div class="section-container">

@@ -1263,3 +1263,79 @@ footer {
 .course-lock-badge {
     color: var(--light-text);
 }
+
+/* ===== Vrid på knapparna (#testa) ===== */
+.sim-card { max-width: 720px; margin: 0 auto 2rem; text-align: center; }
+#testa, .sim-form, .sim-resultat { scroll-margin-top: 90px; }
+.sim-card .section-subtitle { margin-bottom: 2rem; font-size: 1.1rem; }
+.sim-form, .sim-resultat { text-align: left; max-width: 520px; margin: 0 auto; }
+.sim-form > * + * { margin-top: 1.1rem; }
+.sim-etikett { display: block; font-size: 0.9rem; font-weight: 600; color: var(--dark-text); margin-bottom: 0.4rem; }
+.sim-rad { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+.sim-form input {
+    width: 100%; padding: 0.8rem 0.9rem; font: inherit; font-size: 1.05rem; color: var(--dark-text);
+    border: 1px solid var(--border-color); border-radius: 12px; background: #fff;
+}
+.sim-form input:focus { outline: 2px solid var(--primary); outline-offset: 1px; border-color: transparent; }
+.sim-val { display: grid; gap: 0.5rem; }
+.sim-val-2 { grid-template-columns: 1fr 1fr; }
+.sim-val-3 { grid-template-columns: repeat(3, 1fr); }
+.sim-val button {
+    font: inherit; color: var(--dark-text); background: #fff; cursor: pointer; text-align: left;
+    border: 2px solid var(--border-soft); border-radius: 14px; padding: 0.7rem 0.9rem;
+    transition: border-color 0.15s, background-color 0.15s;
+}
+.sim-val-2 button, .sim-val-3 button { text-align: center; font-weight: 600; }
+.sim-val button:hover { border-color: var(--primary-light); }
+.sim-val button[aria-pressed="true"] { border-color: var(--primary); background: var(--primary-light); }
+.sim-val-lista button strong { display: block; font-weight: 600; }
+.sim-val-lista button small { display: block; font-size: 0.8rem; color: var(--light-text); }
+.sim-knapp { width: 100%; margin-top: 1.5rem; }
+.sim-varning {
+    margin-top: 0.9rem; padding: 0.75rem 0.9rem; border-radius: 14px; font-size: 0.92rem; line-height: 1.5;
+    background: #FEF6E7; border: 1px solid #F3D9A4; color: #7A4B0B;
+}
+.sim-fel { background: #FDECEA; border-color: #F5C2BC; color: #9B2C1F; }
+.sim-plan { font-size: 1rem; color: var(--dark-text); margin-bottom: 0.75rem; }
+.sim-diagram svg { width: 100%; height: auto; display: block; }
+.sim-forklaring { display: flex; flex-wrap: wrap; gap: 0.3rem 1.2rem; font-size: 0.82rem; color: var(--light-text); margin-top: 0.25rem; }
+.sim-forklaring span { display: inline-flex; align-items: center; gap: 0.4rem; }
+.sim-streck { display: inline-block; width: 18px; }
+.sim-streck-plan { border-top: 2px dashed #B5ADA3; }
+.sim-streck-ny { border-top: 3px solid var(--primary); }
+.sim-text {
+    margin-top: 0.9rem; padding: 0.8rem 0.9rem; border-radius: 16px; font-size: 0.95rem; line-height: 1.55;
+    background: var(--cream-bg); border: 1px solid var(--border-soft);
+}
+.sim-extra { display: block; margin-top: 0.5rem; }
+.sim-reglage { margin-top: 1.25rem; display: grid; gap: 1.1rem; }
+.sim-reglage label { display: block; }
+.sim-reglage-rad { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }
+.sim-reglage-rad .sim-etikett { margin: 0; }
+.sim-reglage-rad b { font-size: 1.05rem; font-variant-numeric: tabular-nums; }
+.sim-reglage input[type="range"] {
+    -webkit-appearance: none; appearance: none; width: 100%; height: 6px; margin: 0.85rem 0 0.5rem;
+    border-radius: 999px; background: var(--border-color); cursor: pointer;
+}
+.sim-reglage input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; appearance: none; width: 24px; height: 24px; border-radius: 50%;
+    background: var(--primary); border: 3px solid #fff; box-shadow: 0 1px 4px rgba(86, 82, 77, 0.35);
+}
+.sim-reglage input[type="range"]::-moz-range-thumb {
+    width: 18px; height: 18px; border-radius: 50%; background: var(--primary); border: 3px solid #fff;
+    box-shadow: 0 1px 4px rgba(86, 82, 77, 0.35);
+}
+.sim-reglage input[type="range"]:focus-visible { outline: 2px solid var(--primary); outline-offset: 4px; }
+.sim-reglage small { display: block; font-size: 0.8rem; color: var(--light-text); margin-top: 0.15rem; }
+.sim-balans { font-size: 0.8rem; color: var(--light-text); margin-top: 1rem; }
+.sim-cta { margin-top: 1.5rem; text-align: center; }
+.sim-cta .btn { width: 100%; white-space: normal; }
+.sim-cta p { font-size: 0.9rem; color: var(--light-text); margin-top: 0.6rem; }
+.sim-sma-knappar { display: flex; justify-content: center; gap: 1.25rem; margin-top: 0.75rem; }
+.sim-sma-knappar button { font: inherit; font-size: 0.92rem; font-weight: 600; color: var(--primary); background: none; border: 0; cursor: pointer; padding: 0.4rem; }
+.sim-sma-knappar button:hover { color: var(--primary-dark); text-decoration: underline; }
+.sim-ansvar { font-size: 0.75rem; color: var(--light-text); margin-top: 1.25rem; text-align: center; }
+[hidden] { display: none !important; }
+@media (max-width: 768px) {
+    .sim-card .section-subtitle { font-size: 1rem; }
+}

@@ -1,5 +1,10 @@
+import { setupSimulator } from './simulator';
+
 
 document.addEventListener('DOMContentLoaded', () => {
+    // --- Vrid på knapparna ---
+    setupSimulator();
+
     // --- Feature Showcase Carousel ---
     // Note: Tab navigation logic removed as we moved to individual cards.
     // We keep the logic stub if we need to add interactivity to the cards later (e.g. scroll tracking).
