@@ -1296,7 +1296,22 @@ footer {
     background: #FEF6E7; border: 1px solid #F3D9A4; color: #7A4B0B;
 }
 .sim-fel { background: #FDECEA; border-color: #F5C2BC; color: #9B2C1F; }
-.sim-plan { font-size: 1rem; color: var(--dark-text); margin-bottom: 0.75rem; }
+.sim-plan { font-size: 0.95rem; color: var(--light-text); margin-bottom: 0.75rem; }
+.sim-mal {
+    padding: 1rem 1.1rem; border-radius: 18px; margin-bottom: 0.75rem;
+    background: var(--accent-light); border: 1px solid #CFDDC9;
+}
+.sim-mal p { font-family: var(--font-heading); font-size: 1.3rem; line-height: 1.35; color: var(--dark-text); }
+.sim-mal p strong { color: #4F7A32; }
+.sim-mal-nas-inte { background: #FDF1EC; border-color: var(--general-border); }
+.sim-mal-nas-inte p strong { color: var(--general-text); }
+.sim-jmf {
+    display: inline-block; margin-top: 0.6rem; padding: 0.3rem 0.75rem; border-radius: 999px;
+    font-size: 0.85rem; font-weight: 600; background: #fff; color: var(--dark-text); border: 1px solid var(--border-color);
+}
+.sim-jmf-bra { background: #fff; color: #4F7A32; border-color: #A9C79A; }
+.sim-jmf-varn { background: #FEF6E7; color: #7A4B0B; border-color: #F3D9A4; }
+.sim-jmf-stopp { background: #FDECEA; color: #9B2C1F; border-color: #F5C2BC; }
 .sim-diagram svg { width: 100%; height: auto; display: block; }
 .sim-forklaring { display: flex; flex-wrap: wrap; gap: 0.3rem 1.2rem; font-size: 0.82rem; color: var(--light-text); margin-top: 0.25rem; }
 .sim-forklaring span { display: inline-flex; align-items: center; gap: 0.4rem; }
